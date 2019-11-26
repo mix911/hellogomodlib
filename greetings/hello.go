@@ -1,12 +1,10 @@
-package testmod
+package greetings
 
 import "fmt"
 import "errors"
 
-//
-// Deprecated: use greetings and farewells packages instead.
-// Hi ...
-func Hi(name string, lang string) (string, error) {
+// Hello ...
+func Hello(name string, lang string) (string, error) {
 	switch lang {
 	case "en":
 		return fmt.Sprintf("Hello, %s", name), nil
